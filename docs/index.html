@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SS220 Profile Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="page">
+
+  <div class="card upload-card" id="uploadCard">
+    <h1>Просмотр .yml профиля</h1>
+    <input type="file" id="fileInput" accept=".yml" />
+    <div id="status"></div>
+    <div class="drop-zone">Перетащите файл сюда</div>
+  </div>
+
+  <div class="card info-card hidden" id="infoCard">
+    <h2>Сводка персонажа</h2>
+    <div class="info-grid">
+
+      <div class="full">
+        <span>Имя:</span>
+        <span id="name"></span>
+      </div>
+
+      <div>
+        <span>Раса:</span>
+        <span id="species"></span>
+      </div>
+
+      <div>
+        <span>Возраст:</span>
+        <span id="age"></span>
+      </div>
+
+      <div>
+        <span>Пол:</span>
+        <span id="gender"></span>
+      </div>
+
+      <div>
+        <span>Местоимение:</span>
+        <span id="sex"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card canvas-card hidden" id="canvasCard">
+    <h2>Подпись</h2>
+    <canvas id="canvas"></canvas>
+    <div id="captionText" class="no-caption">Нет подписи...</div>
+  </div>
+
+</div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
