@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI Demo v2.0</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UI Demo v3.0</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<nav class="navbar">
+    <div class="logo">SS220 UI</div>
+    <button class="button small-btn">Войти</button>
+</nav>
+
 <div class="wrapper">
 
+    <div class="card large">
+        <h1>Большой контейнер</h1>
+        <div class="subtitle">Живой интерфейс нового поколения</div>
+        <button class="button">Главное действие</button>
+        <input class="input" placeholder="Введите данные...">
+    </div>
+
     <div class="card">
-        <h1>Главный контейнер</h1>
-        <div class="subtitle">
-            Пример <span class="highlight">glass</span> эффекта
-        </div>
+        <h1>Стандартный блок</h1>
+        <button class="button" id="mainBtn">Ripple кнопка</button>
+    </div>
 
-        <button class="button" id="mainBtn">Красивая кнопка</button>
-        <input class="input" placeholder="Введите текст...">
-
-        <div class="small-text">Подсказка: попробуйте нажать кнопку</div>
+    <div class="card small">
+        <h1>Mini</h1>
+        <button class="button">OK</button>
     </div>
 
     <div class="card">
         <h1>Настройки</h1>
-        <div class="subtitle">Анимированный переключатель</div>
-
         <label class="switch">
             <input type="checkbox" id="themeToggle">
             <span class="slider"></span>
         </label>
-
-        <br><br>
-        <button class="button">Сохранить</button>
-        <button class="button purple">Доп. кнопка</button>
     </div>
 
 </div>
